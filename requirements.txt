@@ -6,3 +6,9 @@ pillow==12.1.1
 python-dotenv==1.2.1
 sqlparse==0.5.5
 tzdata==2025.3
+gunicorn
+whitenoise
+dj-database-url
+psycopg2-binary
+djangorestframework-simplejwt
+djangorestframework-simplejwt==5.5.1
