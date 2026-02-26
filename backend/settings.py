@@ -205,3 +205,10 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:5173",
 ]
 SESSION_COOKIE_SECURE = False
+
+
+
+import os
+
+# Configuration du port pour Render
+PORT = os.environ.get('PORT', '10000')
