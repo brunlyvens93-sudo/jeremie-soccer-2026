@@ -1,3 +1,5 @@
+import os  # Vérifiez que cette ligne est en haut du fichier
+
 # CORS settings - Configuration complète et permissive
 CORS_ALLOW_ALL_ORIGINS = False  # On ne veut PAS tout autoriser
 CORS_ALLOWED_ORIGINS = [
@@ -36,3 +38,18 @@ CORS_ALLOW_METHODS = [
 # Configuration supplémentaire pour les mobiles
 CORS_EXPOSE_HEADERS = ['content-type', 'authorization']
 CORS_PREFLIGHT_MAX_AGE = 86400  # 24 heures
+
+
+
+
+
+
+
+
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # LIGNE IMPORTANTE
+
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
